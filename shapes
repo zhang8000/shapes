@@ -1,0 +1,62 @@
+#include "stdafx.h"
+#include <iostream>
+#include<iomanip>
+using namespace std;
+void main()
+{
+	int iInput;
+	iInput = 0;
+	cout << "欢迎使用面积计算程序，1为三角形，2为长方形或正方形，3为梯形，4为圆形" << iInput << endl ;
+	cin >> iInput;
+		if(iInput==1)
+		{
+			int iInput1;
+	        iInput1=0;
+	        cout << "输入三角形的底" << iInput1 << endl;
+	        cin >> iInput1;
+	        int iInput2;
+	        iInput2=0;
+	        cout << "输入三角形的高" << iInput2 << endl;
+	        cin >> iInput2;
+	        cout << "三角形的面积为" <<iInput1*iInput2/2 << endl;
+			
+		}else if(iInput==2)
+		{
+			int iInput3;
+	        iInput3 = 0;
+	        cout << "输入长方形或正方形的长" << iInput3 << endl;
+	        cin >> iInput3;
+	        int iInput4;
+	        iInput4 = 0;
+	        cout << "输入长方形或正方形的宽" << iInput4 << endl;
+	        cin >> iInput4;
+	        cout << "长方形或正方形的面积为" << iInput3*iInput4 << endl;
+			
+		}else if(iInput==3)
+		{
+			int iInput5;
+	        iInput5 = 0;
+	        cout << "输入梯形的上底" << iInput5 << endl;
+	        cin >> iInput5;
+	        int iInput6;
+	        iInput6 = 0;
+	        cout << "输入梯形的下底" << iInput6 << endl;
+	        cin >> iInput6;
+	        int iInput7;
+	        iInput7 = 0;
+	        cout << "输入梯形的高" << iInput7 << endl;
+	        cin >> iInput7;
+	        cout << "梯形的面积为" << (iInput5 + iInput6)*iInput7 /2 << endl;
+			
+		}else if(iInput==4)
+		{
+			int iInput8;
+	        iInput8 = 0;
+	        cout << "输入圆形的半径" << iInput8 << endl;
+	        cin >> iInput8;
+	        cout << "圆形的面积为" << iInput8*3.14*2 << endl;
+			
+		};
+		
+}
+
