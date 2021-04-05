@@ -4,19 +4,25 @@
 using namespace std;
 void main()
 {
-	int iInput;
+	int iInput9;
+	iInput9 = 0;
+	cout << "欢迎使用几何计算程序，输入1为面积计算程序，输入2为周长计算程序" << endl;
+	cin >> iInput9;
+	if(iInput9==1)
+	{
+		int iInput;
 	iInput = 0;
-	cout << "欢迎使用面积计算程序，1为三角形，2为长方形或正方形，3为梯形，4为圆形" << iInput << endl ;
+	cout << "欢迎使用面积计算程序，1为三角形，2为长方形或正方形，3为梯形，4为圆形" << endl ;
 	cin >> iInput;
 		if(iInput==1)
 		{
 			int iInput1;
 	        iInput1=0;
-	        cout << "输入三角形的底" << iInput1 << endl;
+	        cout << "输入三角形的底" << endl;
 	        cin >> iInput1;
 	        int iInput2;
 	        iInput2=0;
-	        cout << "输入三角形的高" << iInput2 << endl;
+	        cout << "输入三角形的高" << endl;
 	        cin >> iInput2;
 	        cout << "三角形的面积为" <<iInput1*iInput2/2 << endl;
 			
@@ -24,11 +30,11 @@ void main()
 		{
 			int iInput3;
 	        iInput3 = 0;
-	        cout << "输入长方形或正方形的长" << iInput3 << endl;
+	        cout << "输入长方形或正方形的长" << endl;
 	        cin >> iInput3;
 	        int iInput4;
 	        iInput4 = 0;
-	        cout << "输入长方形或正方形的宽" << iInput4 << endl;
+	        cout << "输入长方形或正方形的宽" << endl;
 	        cin >> iInput4;
 	        cout << "长方形或正方形的面积为" << iInput3*iInput4 << endl;
 			
@@ -36,15 +42,15 @@ void main()
 		{
 			int iInput5;
 	        iInput5 = 0;
-	        cout << "输入梯形的上底" << iInput5 << endl;
+	        cout << "输入梯形的上底"  << endl;
 	        cin >> iInput5;
 	        int iInput6;
 	        iInput6 = 0;
-	        cout << "输入梯形的下底" << iInput6 << endl;
+	        cout << "输入梯形的下底"  << endl;
 	        cin >> iInput6;
 	        int iInput7;
 	        iInput7 = 0;
-	        cout << "输入梯形的高" << iInput7 << endl;
+	        cout << "输入梯形的高" << endl;
 	        cin >> iInput7;
 	        cout << "梯形的面积为" << (iInput5 + iInput6)*iInput7 /2 << endl;
 			
@@ -52,11 +58,65 @@ void main()
 		{
 			int iInput8;
 	        iInput8 = 0;
-	        cout << "输入圆形的半径" << iInput8 << endl;
+	        cout << "输入圆形的半径" << endl;
 	        cin >> iInput8;
-	        cout << "圆形的面积为" << iInput8*3.14*2 << endl;
+	        cout << "圆形的面积为" << iInput8*3.14*iInput8 << endl;
 			
 		};
 		
+	}else if(iInput9==2)
+	{
+		int iInput10;
+		iInput10 = 0;
+		cout << "欢迎使用周长计算程序，1为三角形，2为四边形，3为圆形" << endl;
+		cin >> iInput10;
+		if(iInput10==1)
+		{
+			int iInput11;
+			iInput11 = 0;
+			cout << "输入三角形的第一条边" << endl;
+			cin >> iInput11;
+			int iInput12;
+			iInput12 = 0;
+			cout << "输入三角形的第二条边" << endl;
+			cin >> iInput12;
+			int iInput13;
+			iInput13 = 0;
+			cout << "输入三角形的第三条边" << endl;
+			cin >> iInput13;
+			cout << "三角形的周长为" << iInput11+iInput12+iInput13 << endl;
+
+
+		}else if(iInput10==2)
+		{
+			int iInput14;
+			iInput14 = 0;
+			cout << "输入四边形的第一条边" << endl;
+			cin >> iInput14;
+			int iInput15;
+			iInput15 = 0;
+			cout << "输入四边形的第二条边" << endl;
+			cin >> iInput15;
+			int iInput16;
+			iInput16 = 0;
+			cout << "输入四边形的第三条边" << endl;
+			cin >> iInput16;
+			int iInput17;
+			iInput17 = 0;
+			cout << "输入四边形的第四条边" << endl;
+			cin >> iInput17;
+			cout << "四边形的周长为" << iInput14+iInput15+iInput16+iInput17 << endl;
+
+		}else if(iInput10==3)
+		{
+			int iInput18;
+			iInput18 = 0;
+			cout << "输入圆的半径" << endl;
+			cin >> iInput18;
+			cout << "圆的周长为"<< iInput18*3.14*2 << endl;
+		
+		}
+
+	}
 }
 
